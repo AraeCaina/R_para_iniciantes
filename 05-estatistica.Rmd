@@ -1,4 +1,4 @@
-# Iniciando na estatística
+# Iniciando na estatística {#estatistica}
 ## Média, mediana e moda
 ## Desvio padrão
 ## Tipos de distribuição

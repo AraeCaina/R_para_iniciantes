@@ -1,4 +1,4 @@
-# Trabalhando com escores de testes
+# Trabalhando com escores de testes {#primeirasAnalises}
 ## Escala likert
 ## Itens de polo opostos
 ## Calculando escores

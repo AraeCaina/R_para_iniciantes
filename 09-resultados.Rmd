@@ -1,4 +1,4 @@
-# Apresentando seus resultados
+# Apresentando seus resultados {#resultados}
 ## Introdução ao RMarkdown
 ## Texto no RMarkdown
 ## Código no R Markdown

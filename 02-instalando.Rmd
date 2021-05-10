@@ -1,4 +1,4 @@
-# Instalando e preparando o R e RStudio
+# Instalando e preparando o R e RStudio {#instalando}
 
 ## O que é o R?
 

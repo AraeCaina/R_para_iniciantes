@@ -1,4 +1,4 @@
-# Gráficos
+# Gráficos {#graficos}
 ## Gráficos básicos do R
 ## GGPLOT2
 ### BarPlot

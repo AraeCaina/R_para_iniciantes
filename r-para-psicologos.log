@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.10)  10 MAY 2021 15:19
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.10)  10 MAY 2021 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**bookdown-demo.tex
-(./bookdown-demo.tex
+**r-para-psicologos.tex
+(./r-para-psicologos.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-07> (c:/Users/araec/AppData/Roaming/TinyTeX/texmf
 -dist/tex/latex/base/book.cls
@@ -516,8 +516,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip62
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count308
-) (./bookdown-demo.aux)
-\openout1 = `bookdown-demo.aux'.
+) (./r-para-psicologos.aux)
+\openout1 = `r-para-psicologos.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
 LaTeX Font Info:    ... okay on input line 125.
@@ -825,9 +825,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 125.
 LaTeX Info: Redefining \pageref on input line 125.
 LaTeX Info: Redefining \nameref on input line 125.
-(./bookdown-demo.out) (./bookdown-demo.out)
+(./r-para-psicologos.out) (./r-para-psicologos.out)
 \@outlinefile=\write4
-\openout4 = `bookdown-demo.out'.
+\openout4 = `r-para-psicologos.out'.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 127.
@@ -866,7 +866,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2
 
-] (./bookdown-demo.toc
+] (./r-para-psicologos.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -885,7 +885,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 4.
 [3] [4])
 \tf@toc=\write5
-\openout5 = `bookdown-demo.toc'.
+\openout5 = `r-para-psicologos.toc'.
 
 [5] [6
 
@@ -900,8 +900,9 @@ Chapter 2.
 
 LaTeX Warning: Reference `methods' on page 9 undefined on input line 157.
 
-File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
-<use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
+File: r-para-psicologos_files/figure-latex/nice-fig-1.pdf Graphic file (type pd
+f)
+<use r-para-psicologos_files/figure-latex/nice-fig-1.pdf>
 [9] [10]
 Chapter 3.
 [11
@@ -942,22 +943,22 @@ Chapter 11.
 
 ]
 Chapter 12.
-(./bookdown-demo.bbl [29] [30
+(./r-para-psicologos.bbl [29] [30
 
-]) [31] (./bookdown-demo.aux)
+]) [31] (./r-para-psicologos.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
+Package rerunfilecheck Info: File `r-para-psicologos.out' has not changed.
 (rerunfilecheck)             Checksum: 17B02C9613E032C76C4E8C05637B55E6;8426.
  ) 
 Here is how much of TeX's memory you used:
  16790 strings out of 478774
- 298622 string characters out of 5862448
- 758283 words of memory out of 5000000
+ 298762 string characters out of 5862448
+ 758303 words of memory out of 5000000
  36546 multiletter control sequences out of 15000+600000
  409905 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 85i,8n,121p,345b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,8n,121p,349b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (31 pages).
+Output written on r-para-psicologos.pdf (31 pages).

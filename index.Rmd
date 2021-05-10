@@ -1,6 +1,6 @@
 --- 
 title: "R para Psicólogos"
-author: "Cainã, Martins e Jaloto"
+author: "Cainã, Martins, Jaloto e Dinardi"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
