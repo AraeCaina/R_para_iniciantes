@@ -1,0 +1,5 @@
+# Trabalhando com escores de testes
+## Escala likert
+## Itens de polo opostos
+## Calculando escores
+## Comparando grupos

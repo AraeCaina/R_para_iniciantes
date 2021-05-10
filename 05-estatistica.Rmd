@@ -1,0 +1,5 @@
+# Iniciando na estatística
+## Média, mediana e moda
+## Desvio padrão
+## Tipos de distribuição
+## DEscritivas

@@ -1,0 +1,25 @@
+# Instalando e preparando o R e RStudio
+
+## O que é o R?
+
+Texto 
+
+## Instalando o R
+
+Texto
+
+## O que é o RStudio?
+
+Texto
+
+## Instalando RStudio
+
+Texto
+
+## Scripts, Markdown e Shiny
+
+Texto
+
+## Salvando códigos
+
+Texto

@@ -1,0 +1,8 @@
+# Gráficos
+## Gráficos básicos do R
+## GGPLOT2
+### BarPlot
+### Histogram
+### Scatterplot
+### Theme e Labs
+### Ticks e Axis
