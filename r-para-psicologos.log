@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.10)  10 MAY 2021 15:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.10)  12 JUL 2021 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,54 +911,99 @@ Chapter 3.
 Chapter 4.
 [13
 
-] [14
-
-]
+] [14] [15] [16]
 Chapter 5.
-[15] [16
+[17
+
+] [18
 
 ]
 Chapter 6.
-[17] [18
-
-]
-Chapter 7.
 [19] [20
 
 ]
-Chapter 8.
+Chapter 7.
 [21] [22
 
 ]
-Chapter 9.
+Chapter 8.
 [23] [24
 
 ]
+Chapter 9.
+[25] [26]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 640--640
+[]\TU/lmtt/m/n/10 ## `stat_bin()` using `bins = 30`. Pick better value with `bi
+nwidth`.[] 
+ []
+
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-17-1.pdf>
+[27]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-18-1.pdf>
+[28]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-19-1.pdf>
+[29]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-20-1.pdf>
+[30]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-21-1.pdf>
+[31]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-22-1.pdf>
+[32]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-23-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33] [34]
+File: r-para-psicologos_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
+(type pdf)
+<use r-para-psicologos_files/figure-latex/unnamed-chunk-24-1.pdf>
+[35] [36
+
+]
 Chapter 10.
-[25] [26
+[37] [38
 
 ]
 Chapter 11.
-[27] [28
+File: ./imagens/cap10imagem1.png Graphic file (type bmp)
+<./imagens/cap10imagem1.png>
+[39] [40]
+File: ./imagens/cap10imagem2.png Graphic file (type bmp)
+<./imagens/cap10imagem2.png>
+[41] [42
 
 ]
 Chapter 12.
-(./r-para-psicologos.bbl [29] [30
+(./r-para-psicologos.bbl [43] [44
 
-]) [31] (./r-para-psicologos.aux)
+]) [45] (./r-para-psicologos.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `r-para-psicologos.out' has not changed.
-(rerunfilecheck)             Checksum: 17B02C9613E032C76C4E8C05637B55E6;8426.
+(rerunfilecheck)             Checksum: 3F7CAD7797A2688C58D9EF50AD92DB3F;8451.
  ) 
 Here is how much of TeX's memory you used:
- 16790 strings out of 478774
- 298762 string characters out of 5862448
- 758303 words of memory out of 5000000
- 36546 multiletter control sequences out of 15000+600000
+ 16873 strings out of 478774
+ 303150 string characters out of 5862448
+ 758443 words of memory out of 5000000
+ 36617 multiletter control sequences out of 15000+600000
  409905 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 85i,8n,121p,349b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,8n,121p,871b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on r-para-psicologos.pdf (31 pages).
+Output written on r-para-psicologos.pdf (45 pages).

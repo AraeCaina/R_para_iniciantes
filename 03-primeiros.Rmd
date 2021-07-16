@@ -12,4 +12,117 @@
 
 ## Criando funções
 
+Configurar uma função é uma maneira simples de garantir que uma série específica de calculos ou tarefas sejam executadas sempre da mesma maneira. Ela tem 4 estruturas principais:
 
+1. nome
+    + nome que será dado a função para ser chamada posteriormente
+2. argumentos
+    + argumentos que serão passados quando chamar a função.
+3. estrutura interna
+    + os cálculos ou tarefas que a função executa
+4. retorno
+    + o que a função irá retornar.
+   
+Vamos a um exemplo simples. Vamos criar uma função para fazer uma conta básica.
+
+Primeiro, passe o nome da função, seguido de uma atribuição (<- ou =), seguido de `function(){}`. O noome da função é minhaPrimeiraFuncao
+
+```{r}
+minhaPrimeiraFuncao <- function(){ 
+  # essa é a estrutura interna
+  2+2
+}
+```
+
+Repare que não tem argumentos. se tivessem, estariam dentro do parenteses. Para "salvar" uma função dentro do seu ambiente de desenvolvimento é necessário rodar seu código para que ela esteja disponível. Portanto não esqueça de rodar o código acima para "salvar" a função no ambiente. Depois de salvo ela vai aparecer no "Environment" do R, no canto superior direito.
+
+repare o que acontece quando você chama a função do jeito que está:
+```{r}
+minhaPrimeiraFuncao()
+```
+
+
+
+Agora vamos imaginar que você queria fazer uma função de soma de dois números. Primeiro você precisa informar a função quais números você quer somar. Essa informação vai nos argumentos que são passados na função. Quando você escreve a função você indica quais vão ser as coisas que vai utilizar dentro dela, e depois vai chamar na estrutura interna. Os argumentos passados são os que irão ser usados na estrutura interna. Nesse caso, n1 e n2. Olhe só:
+
+```{r}
+minhaSegundaFuncao <- function(n1, n2){ 
+
+  n1+n2
+}
+```
+
+
+
+
+Agora, tente chamar a função sem chamar nenhum argumento e veja o que acontece
+
+
+Agora, passe os dois argumentos:
+
+```{r}
+minhaSegundaFuncao(n1 = 2, n2 = 3)
+```
+
+
+
+Uma coisa importante para saber é que se você colocar os argumentos na ordem que eles estão dispostos originalmente na função, você não precisa nomea-los. Veja:
+
+```{r}
+minhaSegundaFuncao(2, 3)
+```
+
+
+Agora vamos para o retorno. O retorno vai encerrar o funcionamento da função e devolver o que você quiser. Para isso, vamos criar um objeto, fazer uma conferência para ver se ele atinge certo critério, retornar algo se o critério foi atingido e continuar a fazer cálculos se a o critério não for atingido
+
+```{r}
+minhaTerceiraFuncao <- function(n1, n2){ 
+
+  soma <- n1+n2
+  
+  if(soma > 10){
+    return(soma)
+  }
+  
+  soma <- soma + 10000
+  
+  return(soma)
+}
+```
+
+
+
+Chame a função atingindo o critério e confira o console
+
+```{r}
+minhaTerceiraFuncao(6, 5)
+```
+
+
+Perceba que não houve a soma de 10000 ao valor final. Agora não atinja o critério:
+
+```{r}
+minhaTerceiraFuncao(1, 1)
+```
+
+
+Percebeu?
+
+**IMPORTANTE!!!!!!!**
+*Nem toda função precisa retornar algo. Você pode fazer uma função sem esse retorno.*
+
+
+Agora, caso você queira armazenar os resultados em um objeto é só usar o padrão do R.
+
+```{r}
+resultado <- minhaTerceiraFuncao(1, 1)
+```
+
+
+Chame o objeto
+```{r}
+resultado
+```
+
+
+Pronto! Você já sabe fazer uma função!

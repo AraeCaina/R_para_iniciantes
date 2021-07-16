@@ -2,7 +2,13 @@
 
 ## O que é o R?
 
-Texto 
+O R é uma linguagem e um ambiente para computação gráfica e estatística. O R dispoibiliza uma variedade de técnicas estatísticas (modelagem linear e não linear, testes estatísticos clássicos, análise de série temporal, classificação, *clustering*, etc) e gráficas, tendo como caractéristica principal a colaboração e criação de conteúdo por pesquisadores e entusiastas. 
+
+Uma das forças do R é a facilidade de produçao de gráficos adequados a publicação, seja acadêmica ou não, com alto grau de personalização. Na maioria das vezes, o usuário tem controle sobre boa parte dos elementos que compõem um gráfico, podendo adequa-lo a sua finalidade.
+
+Neste livro mostraremos como é possível utilizar a capacidade de processamento e manipulação de dados do R tanto para análise quanto para apresentação de dados. Com a escolha das técnicas certas, é possível realizar análises de qualidade e apresentar os resultados personalizados para atender os demandas de quem irá receber a informação. É sempre importante lembrar que a população geral não é muito proficiente em análises estatísticas, mas uma representaçao gráfica ou um relatório bem construído pode facilitar o entendimento de conceitos e resultados complexos para profissionais que tem atuação na ponta da atividade profissional e não tanto em pesquisa.
+
+Após a leitura desse livro você será capaz de construir pelo menos duas estruturas de relatório: estáticas (com RMarkdown) ou dinâmicas (com Shiny), além de melhorar sua habilidade na programação em R.
 
 ## Instalando o R
 
@@ -10,16 +16,19 @@ Texto
 
 ## O que é o RStudio?
 
-Texto
+É possível programar em Rem diversos Ambientes de Desenvolvimento Integrado (IDE), como Visual Studio Code, Gedit, Vim ou Emacs. No entanto, existem alguns IDE projetados especificamente para atender as demandas de um desenvolvedor que escolhe o R como linguagem. O melhor (na humilde opinião destes autores) é o RStudio, uma vez que ele oferece recursos para os mais diversos tipos de programadores. Ele é bom especialmente para os iniciantes, uma vez que oferece uma interface gráfica com um design inteligente e de fácil entendimento, com muitas soluções tipo *point and click*, fazendo com que possa ser utilizado por pessoas que não tem um conhecimento uito desenvolvido em  programação.
+
+Claro que você pode optar por utilizar qualquer outro IDE. Boa parte das soluções encontradas nesse livro irão funcionar tranquilamente em qualquer um deles, mas por ser um livro voltado a iniciantes pode ser que você tenha dificuldade em seguir algumas orientações que vão utilizar de recursos específicos do RStudio. Com alguma pesquisa, no entanto, será possível acompanhar as atividades com tranqulidade.
 
 ## Instalando RStudio
 
 Texto
 
-## Scripts, Markdown e Shiny
+## Entendendo o RStudio
 
 Texto
 
-## Salvando códigos
+## Scripts, RMarkdown e Shiny
 
-Texto
+Durante os capítulos desse livro iremos 
+

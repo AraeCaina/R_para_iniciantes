@@ -1,8 +1,266 @@
 # Gráficos {#graficos}
 ## Gráficos básicos do R
 ## GGPLOT2
+
+GGPLOT2 é um pacote específico para a criação de gráficos. Pela sua facilidade e por ter documentação extensa, é um dos pacotes mais utilizados para esse fim. Nesse capítulo iremos entender um pouquinho de como esse pacote funciona e aprenderemos a produzir três dos gráficos básicos que utilizamos para pesquisa em psicologia.
+
+Para instalar o pacote você pode utilizar duas estratégias:
+
+```{r eval=FALSE}
+# Instalar o tidyverse, que já contém o ggplot2
+install.packages("tidyverse")
+
+# Instalar somente o ggplot2
+install.packages("ggplot2")
+
+```
+
+Depois disso é só carregar o pacote
+
+```{r}
+library(ggplot2)
+```
+
 ### BarPlot
 ### Histogram
+
+Histograma é um tipo de gráfico de barras que agrupa valores próximos, simulando (ou não) classes para demonstrar distribuição de frequências ou densidades. É uma alternativa para o uso de valores continuos no gráfico de barras, ao invés de tratá-los como dados discretos.
+
+Um exemplo prático do bom uso de um histograma é análise das frequências de nota de uma determinada turma. Um gráfico de barras vai plotar somente quantas vezes cada nota individual aparece, e o que nós precisamos é saber quantas notas DENTRO DE DETERMINADO INTERVALO estão presentes em uma amostra. Ou seja: ao invés de saber quantas notas 6.5, 7.5, ou 8 foram atribuídas aos alunos, você pode agrupar em uma "classe" de notas de 6 à 8. Vamos a parte prática!
+
+Primeiro iremos dar o nosso `set.seed(1234)` para garantir a replicabilidade do exemplo. Depois, vamos utilizar a função `rnorm()` para simular uma distribuição normal de notas de uma turma. Para fazer isso, passamos três argumentos:
+
+1. 1000 = Número de observações
+2. mean = Média da distribuição
+3. sd = Desvio padrão da distribuição
+
+Depois vamos criar um vetor com o sexo biológico dos alunos, para ver se existe alguma diferença entre os grupos no futuro. Para isso, vamos usar a função `rep()`. Ela aceita, entre outros, 2 argumentos
+
+1. Valor a ser repetido
+2. Quantidades de veze que será repetido
+
+```{r}
+set.seed(1234) # se já fez isso antes, não precisa rodar essa linha
+
+notas <- rnorm(1000, mean = 5, sd = 1.4) 
+
+sexo <- c(rep('Masculino', 500), rep('Feminino', 500))
+
+escola <- data.frame(notas, sexo)
+```
+
+Ao realizar uma análise mais minuciosa da base `escola`, você irá perceber que existem várias casa decimais no vetor `nota`. Para resolver isso, basta usar a função `round()`. Ela aceita dois argumentos:
+
+1. vetor ou valor que será arredondado
+2. número de casas decimais.
+
+```{r}
+
+escola$notas <- round(escola$notas, 1)
+
+```
+
+Veja lá o que acontece com as notas.
+
+Pronto, já temos um vetor com notas simuladas. Agora vamos tentar criar um histograma simples.
+
+```{r}
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram()
+```
+
+Bom, o gráfico está pronto, mas será que ele ficou bom? Vamos passar o argumento `aes(y = ..count..)` na função `geom_histogram()` para garantir que os valores apresentados serão a soma dos valores dentro de cada intervalo, e não a densidade, mesmo que a contagem de valores é o padrão do `geom_histogram()`.
+
+Além disso, vamos ajustar os `binwidht`, que é o intervalo de unidades do eixo x que serão agrupados em uma classe. Vamos tentar definir esse intervalo em 1 ponto.
+
+```{r}
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(y = ..count..),
+    binwidth = 1
+  )
+```
+
+Agora que nós já temos o gráfico funcionando, vamos tentar adicionar alguns detalhes a ele. A primeira coisa é tentar mudar os ticks do eixo X para facilitar a leitura dos gráficos. Para isso, vamos tentar colocar um tick a cada dois pontos de média. Para isso, vamos usar a função `seq()`, que aceita três argumentos:
+
+1. que valor inicia a sequência
+2. que valor que termina a sequência
+3. qual o intervalo entre os valores.
+
+A função `scale_x_continuous()` vai aceitar diversos argumentos para alterar o valor de escalas contínuas para o eixo x. Aqui, vamos usar dois argumentos:
+
+1. breaks = qual as quebras dos ticks
+2. limits = qual o limite dos ticks
+    + Esse daqui vai aceitar um vetor com os valores de limite. Valor inicial e final.
+
+
+```{r}
+
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(y = ..count..),
+    binwidth = 1
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, 2),
+    limits=c(0, 10)
+  )
+```
+
+Legal, agora o gráfico começa a ficar um pouco mais útil! Eu já consigo ver os grupos de notas, já sei dizer qual a nota de cada um dos grupos com clareza e também sei a quantidade de notas de cada grupo. Vamos colocar uma corzinha nele?
+
+Existem várias maneiras de colorir esse gráfico. Vamos tentar colorir da maneira mais simples que temos. Dentro da função `aes()` do `geom_histogram`, vamos adicionar o argumento `fill`. Ele vai preencher as barras do gráfico com as cores em relação a alguma coisa. Primeiro vamos a contagem.
+```{r}
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(
+      y = ..count..,
+      fill = ..count..
+      ),
+    binwidth = 1
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, 2),
+    limits=c(0, 10)
+  )
+
+```
+
+Já ficou um pouco mais bonito!
+
+Se temos uma varíavel discreta na base de dados, podemos ver a quantidade de observaçõs com base nessa variável. Veja abaixo o que acontece se nós trocarmos o argumento `fill = ..count..` pelo nome do vetor que contém essa variável discreta. No caso `sexo`
+
+
+```{r}
+
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(
+      y = ..count..,
+      fill = sexo
+      ),
+    binwidth = 1
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, 2),
+    limits=c(0, 10)
+  )
+
+```
+
+Vamos voltar ao gráfico anterior, quando colorimos o gráfico de acordo com a quantidade de observações, não pelo sexo.
+
+Você pode escolher quais as cores que vão no gradiente, ou seja, qual o espectro de cores que irão aparecer no gráfico. Para isso, vamos utilizar a função `scale_fill_gradient()`, que leva dois argumentos principais:
+
+1. low = frequência baixa
+2. high = frequência alta
+
+Aqui você pode colocar o nome da cor, o HEX e o RGB ou RGBA. Falaremos disso mais tarde.
+
+```{r}
+
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(
+      y = ..count..,
+      fill = ..count..
+      ),
+    binwidth = 1
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, 2),
+    limits=c(0, 10)
+  ) +
+  scale_fill_gradient(
+    low = "red",
+    high = "green")
+
+```
+
+Repare que os valores não são relativos as unidades da variável do eixo X, mas sim da frequência de observações.
+
+Aí você vai me dizer: "Seria muito bacana se eu conseguisse traçar uma linha no gráfico pra dizer quem teve notas baixas, médias e altas."
+
+É POSSÍVEL!
+
+Use a função geom_vline() para traçar linhas verticais. Ele recebe alguns argumentos:
+
+1. xintercept = onde a linha será traçada em relação ao eixo x
+2. size = tamanho da linha
+3. colour = cor da linha
+4. linetype = estilo da linha
+
+Nesse caso usaremos o HEX para dar a cor e usaremos `linetype = 'dashed'` para traçar uma linha pontilhada
+
+```{r}
+
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(
+      y = ..count..,
+      fill = ..count..
+      ),
+    binwidth = 1
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, 2),
+    limits=c(0, 10)
+  ) +
+  scale_fill_gradient(
+    low = "red",
+    high = "green"
+  ) + 
+  geom_vline(
+    xintercept = 3,
+    size = 1,
+    colour = "#FF3721",
+    linetype = "dashed"
+  )
+  
+
+```
+
+Vamos traçar mais linhas?
+
+
+```{r}
+ggplot(escola, aes(x = notas)) + 
+  geom_histogram(
+    aes(
+      y = ..count..,
+      fill = ..count..
+      ),
+    binwidth = 1
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 10, 2),
+    limits=c(0, 10)
+  ) +
+  scale_fill_gradient(
+    low = "red",
+    high = "green"
+  ) + 
+  geom_vline(
+    xintercept = 3,
+    size = 1,
+    colour = "#FF3721",
+    linetype = "dashed"
+  ) +
+  geom_vline(
+    xintercept = 5,
+    size = 1,
+    colour = "#34BDE1",
+    linetype = "dashed"
+  ) +
+  geom_vline(
+    xintercept = 8,
+    size = 1,
+    colour = "#13DD1A",
+    linetype = "dashed"
+  )
+```
+
+
 ### Scatterplot
 ### Theme e Labs
 ### Ticks e Axis
