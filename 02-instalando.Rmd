@@ -2,9 +2,6 @@
 
 ## O que é o R?
 
-
-Este é um teste novo
-
 O R é uma linguagem e um ambiente para computação gráfica e estatística. O R dispoibiliza uma variedade de técnicas estatísticas (modelagem linear e não linear, testes estatísticos clássicos, análise de série temporal, classificação, *clustering*, etc) e gráficas, tendo como caractéristica principal a colaboração e criação de conteúdo por pesquisadores e entusiastas. 
 
 Uma das forças do R é a facilidade de produçao de gráficos adequados a publicação, seja acadêmica ou não, com alto grau de personalização. Na maioria das vezes, o usuário tem controle sobre boa parte dos elementos que compõem um gráfico, podendo adequa-lo a sua finalidade.
