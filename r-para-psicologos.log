@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.10)  12 JUL 2021 10:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.10)  16 JUL 2021 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,26 +984,62 @@ File: ./imagens/cap10imagem1.png Graphic file (type bmp)
 [39] [40]
 File: ./imagens/cap10imagem2.png Graphic file (type bmp)
 <./imagens/cap10imagem2.png>
-[41] [42
+[41] [42]
+Underfull \hbox (badness 1540) in paragraph at lines 1080--1082
+[]\TU/lmtt/m/n/10 sliderInput() \TU/lmr/m/n/10 shiny widget que é composto por 
+uma barra
+ []
+
+[43] [44]
+File: ./imagens/cap10imagem4.png Graphic file (type bmp)
+<./imagens/cap10imagem4.png>
+File: ./imagens/cap10imagem5.png Graphic file (type bmp)
+<./imagens/cap10imagem5.png>
+[45] [46]
+Chapter 12.
+File: ./imagens/cap10imagem6.png Graphic file (type bmp)
+<./imagens/cap10imagem6.png>
+[47
 
 ]
-Chapter 12.
-(./r-para-psicologos.bbl [43] [44
+File: ./imagens/cap10imagem7.png Graphic file (type bmp)
+<./imagens/cap10imagem7.png>
+[48]
+File: ./imagens/cap10imagem8.png Graphic file (type bmp)
+<./imagens/cap10imagem8.png>
+File: ./imagens/cap10imagem9.png Graphic file (type bmp)
+<./imagens/cap10imagem9.png>
+[49] [50]
+File: ./imagens/cap10imagem10.png Graphic file (type bmp)
+<./imagens/cap10imagem10.png>
+[51] [52]
+File: ./imagens/cap10imagem11.png Graphic file (type bmp)
+<./imagens/cap10imagem11.png>
+[53]
+File: ./imagens/cap10imagem12.png Graphic file (type bmp)
+<./imagens/cap10imagem12.png>
+[54] [55]
+File: ./imagens/cap10imagem13.png Graphic file (type bmp)
+<./imagens/cap10imagem13.png>
+[56]
+File: ./imagens/cap10imagem14.png Graphic file (type bmp)
+<./imagens/cap10imagem14.png>
+(./r-para-psicologos.bbl [57] [58
 
-]) [45] (./r-para-psicologos.aux)
+]) [59] (./r-para-psicologos.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `r-para-psicologos.out' has not changed.
-(rerunfilecheck)             Checksum: 3F7CAD7797A2688C58D9EF50AD92DB3F;8451.
+(rerunfilecheck)             Checksum: 6330DB607F8D46E5B26F4E816E0F2608;8104.
  ) 
 Here is how much of TeX's memory you used:
- 16873 strings out of 478774
- 303150 string characters out of 5862448
- 758443 words of memory out of 5000000
- 36617 multiletter control sequences out of 15000+600000
+ 16966 strings out of 478774
+ 305777 string characters out of 5862448
+ 760297 words of memory out of 5000000
+ 36699 multiletter control sequences out of 15000+600000
  409905 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  85i,8n,121p,871b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on r-para-psicologos.pdf (45 pages).
+Output written on r-para-psicologos.pdf (59 pages).
