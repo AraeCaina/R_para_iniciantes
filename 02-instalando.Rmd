@@ -1,7 +1,7 @@
 # Instalando e preparando o R e RStudio {#instalando}
 
 ## O que é o R?
-eu mudei
+não muda mais
 
 O R é uma linguagem e um ambiente para computação gráfica e estatística. O R dispoibiliza uma variedade de técnicas estatísticas (modelagem linear e não linear, testes estatísticos clássicos, análise de série temporal, classificação, *clustering*, etc) e gráficas, tendo como caractéristica principal a colaboração e criação de conteúdo por pesquisadores e entusiastas. 
 
